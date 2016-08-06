@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="testApp">
+
+<div test-directive></div>
+
+<script>
+var app = angular.module("testApp", []);
+app.directive("testDirective", function() {
+    return {
+        template : "<h1>This is an example for <ng-transclude><h1> Transclude property </h1></ng-transclude></h1>"
+    };
+});
+</script>
+
+</body>
+</html>
